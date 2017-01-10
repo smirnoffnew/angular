@@ -1,3 +1,4 @@
+import ngMaterial from 'angular-material';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import Common from './common/common';
@@ -7,6 +8,7 @@ import 'normalize.css';
 
 angular.module('app', [
     uiRouter,
+    ngMaterial,
     Common,
     Components
   ])
