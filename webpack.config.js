@@ -4,13 +4,17 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
-  entry: {},
+  entry: {
+    vendors: [
+      "webpack-material-design-icons"
+    ]
+  },
   module: {
     loaders: [
        { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
        { test: /\.html$/, loader: 'raw' },
        { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
-       { test: /\.css$/, loader: 'style!css' }
+       { test: /\.css$/, loader: 'style!css' },
     ]
   },
   plugins: [

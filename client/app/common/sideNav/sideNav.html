@@ -1,0 +1,20 @@
+<div layout="column" style="height: 500px;" ng-cloak>
+  <section layout="row" flex>
+    <md-sidenav
+            class="md-sidenav-left"
+            md-component-id="leftSideNav"
+            md-is-locked-open="$mdMedia('gt-md')"
+            md-whiteframe="4">
+
+      <md-toolbar>
+        <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+      </md-toolbar>
+
+      <md-content layout-margin>
+        <p>This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.</p>
+        <md-button ng-click="vm.toggleSideNav()" class="md-accent">Close this Sidenav</md-button>
+      </md-content>
+
+    </md-sidenav>
+  </section>
+</div>
