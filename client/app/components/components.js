@@ -1,14 +1,13 @@
 import angular from 'angular';
-import Home from './home/home';
 import About from './about/about';
 import SignUp from './auth/signup/signup';
+import PagesFactory from './common.pagesFactory';
 
 let componentModule = angular.module('app.components', [
-  Home,
   About,
   SignUp
 ])
-
+.factory('PagesFactory', PagesFactory)
 .name;
 
 export default componentModule;

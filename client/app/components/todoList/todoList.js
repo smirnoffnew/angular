@@ -6,17 +6,6 @@ let todoListModule = angular.module('todoList', [
   uiRouter
 ])
 
-.config(($stateProvider, $urlRouterProvider) => {
-  "ngInject";
-
-  $urlRouterProvider.otherwise('/todoList');
-
-  $stateProvider
-      .state('todoList', {
-        url: '/todoList',
-        component: 'todoList'
-      });
-})
 .component('todoList', todoListComponent)
 .name;
 
