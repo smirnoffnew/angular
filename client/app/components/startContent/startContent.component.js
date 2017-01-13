@@ -5,6 +5,7 @@ import './startContent.scss';
 let startContentComponent = {
   restrict: 'E',
   bindings: {},
+  controllerAs: 'vm',
   template,
   controller
 };

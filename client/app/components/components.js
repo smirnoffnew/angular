@@ -1,11 +1,15 @@
 import angular from 'angular';
+
 import About from './about/about';
-import SignUp from './auth/signup/signup';
+import TodoList from './todoList/todoList';
+import StartContent from './startContent/startContent';
+
 import PagesFactory from './common.pagesFactory';
 
 let componentModule = angular.module('app.components', [
   About,
-  SignUp
+  TodoList,
+  StartContent,
 ])
 .factory('PagesFactory', PagesFactory)
 .name;

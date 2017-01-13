@@ -5,6 +5,7 @@ import './todoList.scss';
 let todoListComponent = {
   restrict: 'E',
   bindings: {},
+  controllerAs: 'vm',
   template,
   controller
 };

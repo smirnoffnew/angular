@@ -4,16 +4,16 @@
     <h1 class="md-toolbar-tools">Меню</h1>
   </md-toolbar>
 
-  <md-content layout-margin">
+  <md-content layout-margin class="string-center">
 
     <md-button ng-repeat="page in vm.pages"
                style="display: block"
                class="md-primary" ui-sref={{page.link}}
-               ui-sref-active="active"  >{{page.title}}
-               ng-click="vm.toggleSelectPage(vm.page.link)"
+               ui-sref-active="active" >
+               {{page.title}}
     </md-button>
 
-    <a style="display: block"  class="md-primary md-button md-ink-ripple" ng-click="vm.toggleSideNav()" >Close Sidenav</a>
+    <md-button class="md-primary md-raised" ng-click="vm.toggleSideNav()" >Close Sidenav</md-button >
   </md-content>
 
 </md-sidenav>

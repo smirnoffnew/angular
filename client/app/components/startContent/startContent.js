@@ -2,12 +2,18 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import startContentComponent from './startContent.component';
 
-let startContentModule = angular.module('startContent', [
+let startContentModule = angular.module('startContentModule', [
   uiRouter
 ])
-
-.component('startContent', startContentComponent)
-
+.config( ($stateProvider) => {
+    "ngInject";
+    $stateProvider
+        .state('start-content', {
+            url: '/start-content',
+            component: 'startContentComponent'
+        })
+})
+.component('startContentComponent', startContentComponent)
 .name;
 
 export default startContentModule;

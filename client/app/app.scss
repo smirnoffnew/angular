@@ -1,2 +1,10 @@
 @import "common/common";
 @import "~angular-material/angular-material";
+
+.active {
+  color:red !important;
+}
+
+.string-center {
+  text-align: center;
+}
