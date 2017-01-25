@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import todoListComponent from './todoList.component';
+import todoListFactory from './todoList.factory'
 
 let todoListModule = angular.module('todoListModule', [
   uiRouter
@@ -14,6 +15,7 @@ let todoListModule = angular.module('todoListModule', [
     });
 })
 .component('todoListComponent', todoListComponent)
+.factory('todoListFactory', todoListFactory)
 .name;
 
 export default todoListModule;

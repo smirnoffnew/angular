@@ -10,7 +10,10 @@ let aboutModule = angular.module('aboutModule', [
     $stateProvider
         .state('about', {
             url: '/about',
-            component: 'aboutComponent'
+            component: 'aboutComponent',
+            data: {
+                'noLogin': true
+            }
     });
 })
 .component('aboutComponent', aboutComponent)

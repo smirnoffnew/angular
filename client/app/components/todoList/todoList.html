@@ -1,7 +1,22 @@
-<div layout-fill layout="column" class="inset">
-  <div layout="column" layout-align="center center">
-    <div>
-      <h1>{{ vm.name }} &nbsp; aaaaaaaaa</h1>
-    </div>
-  </div>
+<div layout-fill layout="column"  layout-align="center center">
+    <md-card ng-repeat="item in vm.items" md-colors="{backgroundColor: '{{item.theme}}-700'}">
+      <md-card-title>
+
+        <md-card-title-media>
+          <div class="md-media-sm card-media">
+            <i class="material-icons">alarm_on</i>
+            <i class="material-icons">alarm_on</i>
+          </div>
+        </md-card-title-media>
+
+        <md-card-title-text>
+          <span class="md-headline">{{item.title}}</span>
+          <p class="md-subhead description" style="width: 40vw">This card is colored according the vxcvxcvxcvx cv  {{item.theme}} theme</p>
+        </md-card-title-text>
+
+      </md-card-title>
+    </md-card>
 </div>
+
+
+

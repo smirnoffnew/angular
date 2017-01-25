@@ -1,0 +1,104 @@
+<div layout="row"  layout-align="center center" md-colors="{backgroundColor: 'green-400'}">
+  <md-button class="md-raised md-primary" ng-click="vm.openBottomSheet()">
+    Open a Bottom Sheet!
+  </md-button>
+</div>
+
+
+<div layout="row">
+  <div flex="10"  hide-xs hide-sm md-colors="{backgroundColor: 'green-700'}" style="font-size: 30px;">hide-xs hide-sm </div>
+  <div flex="80"  flex-xs="100" flex-sm="100" md-colors="{backgroundColor: 'pink-700'}" style="font-size: 30px;" >main item in row</div>
+  <div flex="10"  hide-xs hide-sm  md-colors="{backgroundColor: 'red-700'}" style="font-size: 30px;" >hide-xs hide-sm </div>
+</div>
+
+<div layout="column">
+  <div flex-offset-sm="15" flex md-colors="{backgroundColor: 'blue-700'}" style="font-size: 30px;" >First item in column</div>
+  <div flex md-colors="{backgroundColor: 'pink-700'}" style="font-size: 30px;" >Second item in column</div>
+</div>
+
+<div layout="row" layout-gt-sm="column">
+  <div flex md-colors="{backgroundColor: 'indigo-700'}" style="font-size: 30px;">
+    I'm above on mobile, and to the left on larger devices layout-gt-sm.
+  </div>
+  <div flex md-colors="{backgroundColor: 'brown-700'}" style="font-size: 30px;">
+    I'm below on mobile, and to the right on larger devices layout-gt-sm.
+  </div>
+</div>
+
+<div layout="row" layout-md="column">
+  <div flex md-colors="{backgroundColor: 'lime-700'}" style="font-size: 30px;">
+    I'm above on mobile, and to the left on larger devices layout-md.
+  </div>
+  <div flex md-colors="{backgroundColor: 'amber-700'}" style="font-size: 30px;">
+    I'm below on mobile, and to the right on larger devices layout-md
+  </div>
+</div>
+
+<div layout="column" flex style="height: 100px;"></div>
+
+<div layout="row" layout-wrap>
+  <div flex="none" style="font-size: 30px;" md-colors="{backgroundColor: 'amber-400'}">
+    [flex="none"]
+  </div>
+  <div flex style="font-size: 30px;" md-colors="{backgroundColor: 'pink-400'}">
+    [flex]
+  </div>
+  <div flex="nogrow" style="font-size: 30px;" md-colors="{backgroundColor: 'grey-400'}">
+    [flex="nogrow"]
+  </div>
+  <div flex="grow" style="font-size: 30px;" md-colors="{backgroundColor: 'yellow-400'}">
+    [flex="grow"]
+  </div>
+  <div flex="initial" style="font-size: 30px;" md-colors="{backgroundColor: 'teal-400'}">
+    [flex="initial"]
+  </div>
+  <div flex="auto" style="font-size: 30px;" md-colors="{backgroundColor: 'blue-400'}">
+    [flex="auto"]
+  </div>
+  <div flex="noshrink" style="font-size: 30px;" md-colors="{backgroundColor: 'green-400'}">
+    [flex="noshrink"]
+  </div>
+  <div flex="0" style="font-size: 30px;" md-colors="{backgroundColor: 'orange-400'}">
+    [flex="0"]
+  </div>
+</div>
+
+
+<div layout="column" flex style="height: 100px;">HTML</div>
+
+<div layout="row" layout-align="space-between center">
+  <div style="font-size: 30px;" md-colors="{backgroundColor: 'blue-400'}" >one</div>
+  <div hide show-sm style="font-size: 30px;" md-colors="{backgroundColor: 'teal-400'}" >two</div>
+  <div style="font-size: 30px;" md-colors="{backgroundColor: 'purple-400'}" >three</div>
+</div>
+
+<div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="center">
+  <md-button class="md-primary md-raised" ng-click="vm.showAlert($event)"   >
+    Alert Dialog
+  </md-button>
+</div>
+
+
+<md-fab-toolbar md-open="demo.isOpen" count="demo.count"
+                md-direction="{{demo.selectedDirection}}">
+  <md-fab-trigger class="align-with-text">
+    <md-button aria-label="menu" class="md-fab md-primary">
+      <i class="material-icons" style="margin-top: 15px;" >reorder</i>
+    </md-button>
+  </md-fab-trigger>
+
+  <md-toolbar>
+    <md-fab-actions class="md-toolbar-tools">
+      <md-button aria-label="comment" class="md-icon-button">
+        <i class="material-icons">reorder</i>
+      </md-button>
+      <md-button aria-label="label" class="md-icon-button">
+        <i class="material-icons">reorder</i>
+      </md-button>
+      <md-button aria-label="photo" class="md-icon-button">
+        <i class="material-icons">reorder</i>
+      </md-button>
+    </md-fab-actions>
+  </md-toolbar>
+</md-fab-toolbar>
+

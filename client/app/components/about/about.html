@@ -1,6 +1,45 @@
-<div layout-fill layout="column" class="inset">
-  <div layout="column" layout-align="center center">
-   <p>asdfasdf asdfasdf asdfasdf</p>
-    <p>qwerty qwerty</p>
-  </div>
+<div layout="row" ng-cloak layout-align="center none">
+    <md-whiteframe class="md-whiteframe-24dp" flex="70"  style="margin-top: 15px;">
+        <md-content class="md-no-momentum"  >
+            <form ng-submit="vm.submitForm()">
+                <md-input-container flex="80" flex-offset="10"  layout-align="center none" class="md-icon-float md-block">
+                    <!-- Use floating label instead of placeholder -->
+                    <label>Name</label>
+                    <input ng-model="vm.name" type="text">
+                </md-input-container>
+
+                <!--phone-->
+                <md-input-container flex="80" flex-offset="10" md-no-float class="md-block">
+                    <md-icon class="phone">
+                        <i class="material-icons" md-colors="{color: 'pink-200'}">local_phone</i>
+                    </md-icon>
+                    <input ng-model="vm.phone"
+                           type="text"
+                           placeholder="(XXX) XXX-XX-XX">
+                </md-input-container>
+
+                <!--email-->
+                <md-input-container flex="80" flex-offset="10" class="md-block">
+                    <md-icon class="email">
+                        <i class="material-icons"  md-colors="{color: 'green-200'}">email</i>
+                    </md-icon>
+                    <input ng-model="vm.email" placeholder="Email" >
+                </md-input-container>
+
+                <!--address-->
+                <md-input-container flex="80" flex-offset="10" md-no-float class="md-block">
+                    <md-icon class="location">
+                        <i class="material-icons" md-colors="{color: 'teal-200'}">location_on</i>
+                    </md-icon>
+                    <input ng-model="vm.address" type="text" placeholder="Address" ng-required="true">
+                </md-input-container>
+
+                <md-input-container flex="80" flex-offset="10" layout="row" layout-align="center none">
+                    <md-button type="submit" class="md-raised md-primary">Submit</md-button>
+                </md-input-container>
+
+            </form>
+        </md-content>
+    </md-whiteframe>
 </div>
+

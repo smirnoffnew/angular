@@ -1,6 +1,8 @@
 class TodoListController {
-  constructor() {
+  constructor(todoListFactory) {
+    'ngInject';
     this.name = 'todoList';
+    this.items = todoListFactory.items;
   }
 }
 

@@ -6,7 +6,9 @@ let PagesFactory = () => {
         return [
             {link:'about', title:'about'},
             {link:'start-content', title:'start content'},
-            {link:'todo-list', title:'todo list'}
+            {link:'todo-list', title:'todo list'},
+            {link:'layout', title:'layout'},
+            {link:'sign-in', title:'sign in'}
         ];
     }
 
